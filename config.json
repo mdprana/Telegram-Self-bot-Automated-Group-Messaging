@@ -1,0 +1,15 @@
+{
+    "groups": [
+        "1234567890",
+        "0987654321"
+    ],
+    "messages": [
+        "Hello everyone!\n\nThis is a multi-line message.\nHow are you doing today?"
+    ],
+    "interval_min": 60,
+    "interval_max": 60,
+    "active_hours": {
+        "start": 0,
+        "end": 23
+    }
+}
