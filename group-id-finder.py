@@ -59,6 +59,7 @@ async def main():
         print("\n=== GROUPS ===")
         for idx, (name, chat_id, type_) in enumerate(groups, 1):
             print(f"{idx}. {name}")
+            print(f"   ID: {chat_id}")
             print(f"   Type: {type_}")
             print()
     
@@ -67,6 +68,7 @@ async def main():
         print("\n=== CHANNELS ===")
         for idx, (name, chat_id, type_) in enumerate(channels, 1):
             print(f"{idx}. {name}")
+            print(f"   ID: {chat_id}")
             print(f"   Type: {type_}")
             print()
     
@@ -77,10 +79,11 @@ async def main():
             print("\n=== PRIVATE CHATS ===")
             for idx, (name, chat_id, type_) in enumerate(private_chats, 1):
                 print(f"{idx}. {name}")
+                print(f"   ID: {chat_id}")
                 print()
     
-    print("\nTo use a group in the self-bot, enter its ID when prompted, prefixed with 'id:'")
-    print("Example: id:-1001234567890")
+    print("\nTo use a group in the self-bot, enter its numeric ID when prompted")
+    print("Example: 1234567890")
     
     await client.disconnect()
 
