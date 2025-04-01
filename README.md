@@ -22,19 +22,16 @@ This tool is created for educational purposes only. Using self-bots (automating 
 
 ## 📋 Table of Contents
 
-- [Telegram Self-Bot for Automated Messaging](#telegram-self-bot-for-automated-messaging)
-  - [⚠️ Disclaimer](#️-disclaimer)
-  - [📋 Table of Contents](#-table-of-contents)
-  - [🔍 Overview](#-overview)
-  - [✨ Features](#-features)
-  - [📦 Requirements](#-requirements)
-  - [💻 Installation](#-installation)
-  - [🔧 Setup Guide](#-setup-guide)
-  - [🚀 Usage](#-usage)
-  - [⚙️ Configuration](#️-configuration)
-  - [🔍 Finding Group IDs](#-finding-group-ids)
-  - [🛡️ Minimizing Ban Risk](#️-minimizing-ban-risk)
-  - [❓ Frequently Asked Questions](#-frequently-asked-questions)
+- [Overview](#overview)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [Setup Guide](#setup-guide)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Finding Group IDs](#finding-group-ids)
+- [Minimizing Ban Risk](#minimizing-ban-risk)
+- [FAQ](#frequently-asked-questions)
 
 ## 🔍 Overview
 
@@ -60,13 +57,34 @@ This self-bot allows you to automatically send messages to Telegram groups at ra
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/telegram-self-bot.git
-   cd telegram-self-bot
+   git clone https://github.com/mdprana/Telegram-Self-bot-Automated-Group-Messaging.git
+   cd Telegram-Self-bot-Automated-Group-Messaging
    ```
 
-2. **Install required dependencies:**
+2. **Create a virtual environment (recommended):**
+   
+   On Windows:
+   ```bash
+   python -m venv .env
+   .env\Scripts\activate
+   ```
+   
+   On macOS/Linux:
+   ```bash
+   python3 -m venv .env
+   source .env/bin/activate
+   ```
+   
+   You'll see `(.env)` appear at the beginning of your terminal prompt, indicating the virtual environment is active.
+
+3. **Install required dependencies:**
    ```bash
    pip install telethon
+   ```
+   
+   When you're done using the bot, you can deactivate the virtual environment:
+   ```bash
+   deactivate
    ```
 
 3. **Obtain Telegram API credentials:**
