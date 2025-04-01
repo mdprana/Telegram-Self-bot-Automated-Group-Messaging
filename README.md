@@ -22,16 +22,19 @@ This tool is created for educational purposes only. Using self-bots (automating 
 
 ## 📋 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Setup Guide](#setup-guide)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Finding Group IDs](#finding-group-ids)
-- [Minimizing Ban Risk](#minimizing-ban-risk)
-- [FAQ](#frequently-asked-questions)
+- [Telegram Self-Bot for Automated Messaging](#telegram-self-bot-for-automated-messaging)
+  - [⚠️ Disclaimer](#️-disclaimer)
+  - [📋 Table of Contents](#-table-of-contents)
+  - [🔍 Overview](#-overview)
+  - [✨ Features](#-features)
+  - [📦 Requirements](#-requirements)
+  - [💻 Installation](#-installation)
+  - [🔧 Setup Guide](#-setup-guide)
+  - [🚀 Usage](#-usage)
+  - [⚙️ Configuration](#️-configuration)
+  - [🔍 Finding Group IDs](#-finding-group-ids)
+  - [🛡️ Minimizing Ban Risk](#️-minimizing-ban-risk)
+  - [❓ Frequently Asked Questions](#-frequently-asked-questions)
 
 ## 🔍 Overview
 
