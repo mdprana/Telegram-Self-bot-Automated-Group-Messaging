@@ -172,7 +172,7 @@ class TelegramSelfBot:
                 self.config['interval_max']
             )
             
-            logger.info(f"Next message will be sent in {interval//60} minutes")
+            logger.info(f"Next message will be sent in {interval//60} seconds")
             await asyncio.sleep(interval)
 
     async def start_bot(self):
@@ -222,8 +222,8 @@ class TelegramSelfBot:
         
         # Get intervals
         try:
-            min_interval = int(input("Minimum interval between messages (in minutes): "))
-            max_interval = int(input("Maximum interval between messages (in minutes): "))
+            min_interval = int(input("Minimum interval between messages (in seconds): "))
+            max_interval = int(input("Maximum interval between messages (in seconds): "))
             if min_interval > 0 and max_interval >= min_interval:
                 self.config['interval_min'] = min_interval * 60
                 self.config['interval_max'] = max_interval * 60
