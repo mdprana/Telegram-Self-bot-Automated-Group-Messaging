@@ -172,7 +172,7 @@ class TelegramSelfBot:
                 self.config['interval_max']
             )
             
-            logger.info(f"Next message will be sent in {interval//60} seconds")
+            logger.info(f"Next message will be sent in {interval//60} minutes")
             await asyncio.sleep(interval)
 
     async def start_bot(self):
@@ -201,7 +201,7 @@ class TelegramSelfBot:
         
         # Get groups
         print("Enter group IDs separated by commas (just the numbers):")
-        print("Example: 1554996935, 2406226933, 2193706526")
+        print("Example: 1234567890, 0987654321, 12438242873")
         groups = input("> ").split(',')
         self.config['groups'] = [g.strip() for g in groups if g.strip()]
         
@@ -225,8 +225,8 @@ class TelegramSelfBot:
             min_interval = int(input("Minimum interval between messages (in seconds): "))
             max_interval = int(input("Maximum interval between messages (in seconds): "))
             if min_interval > 0 and max_interval >= min_interval:
-                self.config['interval_min'] = min_interval * 60
-                self.config['interval_max'] = max_interval * 60
+                self.config['interval_min'] = min_interval
+                self.config['interval_max'] = max_interval
         except ValueError:
             print("Invalid input. Using default intervals.")
         
